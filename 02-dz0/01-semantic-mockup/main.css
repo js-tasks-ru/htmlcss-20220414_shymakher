@@ -1,0 +1,40 @@
+* {
+  margin: unset;
+}
+
+body {
+  color: white;
+}
+
+header {
+  background-color: red;
+  text-align: center;
+}
+header nav {
+  background-color: orange;
+  text-align: center;
+  padding: 5px;
+}
+
+header nav a {
+  color: white;
+}
+
+main {
+  padding: 10px;
+  background-color: green;
+}
+
+main article {
+  background-color: blue;
+  padding: 10px;
+}
+
+main article:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: purple;
+  text-align: center;
+}
