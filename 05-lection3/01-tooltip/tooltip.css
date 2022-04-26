@@ -1,0 +1,46 @@
+.content {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip__icon {
+  height: 24px;
+  display: inline-block;
+}
+
+.tooltip__text {
+  position: absolute;
+  padding: 13px 21px 8px;
+  white-space: nowrap;
+  background: #4263eb;
+  box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--grey-2);
+  bottom: 130%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+
+.tooltip:hover .tooltip__icon ~ .tooltip__text {
+  display: block;
+}
+
+.tooltip__text::before {
+  content: '';
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 6px solid #4263eb;
+  position: absolute;
+  top: 100%;
+  transform: translateX(-50%);
+  left: 50%;
+}
