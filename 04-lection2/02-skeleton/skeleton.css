@@ -30,8 +30,18 @@
 .skeleton__box {
   position: relative;
   overflow: hidden;
-  line-height: 20px;
+  height: 20px;
   background-color: var(--grey-2);
+}
+
+.skeleton__box_sm {
+  width: 50%;
+}
+.skeleton__box_md {
+  width: 75%;
+}
+.skeleton__box_lr {
+  width: 100%;
 }
 
 .skeleton__box::after {
