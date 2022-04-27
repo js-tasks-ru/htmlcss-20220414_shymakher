@@ -10,10 +10,9 @@
 
 .modal__overlay {
   height: 100%;
-  background-color: #8080807a;
+  background-color: var(--grey-3);
   backdrop-filter: blur(1px);
-  /* background-color: #c4c4c4;
-  opacity: 0.5; */
+  opacity: 0.5;
 }
 
 .modal__content-wrap {
@@ -30,6 +29,8 @@
   width: 428px;
   background-color: var(--white);
   padding: 30px 40px 33px;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .button-close {
@@ -43,10 +44,9 @@
 
 .modal__title {
   font-weight: 600;
-  font-size: 20px;
-  line-height: 24px;
   margin-bottom: 14px;
 }
 
 .modal__text {
+  font-weight: 400;
 }
