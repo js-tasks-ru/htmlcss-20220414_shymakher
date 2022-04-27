@@ -16,7 +16,7 @@
 
 .histogram__total-orders {
   font-size: 16px;
-  line-height: 24px;
+  height: 24px;
   color: var(--black);
   opacity: 0.8;
 }
