@@ -1,6 +1,6 @@
 /* Стилизация аккордеона */
 .accordion {
-  background: #ffffff;
+  background: var(--white);
   border: 1px solid #acb5bd;
   box-sizing: border-box;
   border-radius: 8px;
@@ -26,10 +26,10 @@
   margin-bottom: 16px;
 }
 
-.accordion svg {
+.accordion .accordion__arrow {
   transition: all 0.3s ease-out;
 }
-.accordion[open] svg {
+.accordion[open] .accordion__arrow {
   transform: rotate(180deg);
 }
 
