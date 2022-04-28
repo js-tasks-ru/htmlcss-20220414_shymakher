@@ -52,6 +52,7 @@
 .calendar__item-range-start,
 .calendar__item-range-end {
   background-color: var(--primary);
+  color: var(--white);
 }
 
 .calendar__item-range-between {
