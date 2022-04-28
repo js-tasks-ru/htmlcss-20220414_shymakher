@@ -9,14 +9,13 @@
 
 .histogram__header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  margin-bottom: 6px;
+  margin-bottom: 3px;
 }
 
 .histogram__total-orders {
   font-size: 16px;
-  height: 24px;
+  line-height: 24px;
   color: var(--black);
   opacity: 0.8;
 }
@@ -29,11 +28,12 @@
 
 .histogram__view-all {
   font-size: 16px;
-  line-height: 24px;
-  color: #4263eb;
+  height: 24px;
+  color: var(--primary);
   background-color: transparent;
   border: unset;
   cursor: pointer;
+  margin-top: 3px;
 }
 
 .histogram__items {
@@ -46,8 +46,7 @@
 .histogram__item {
   flex-basis: 9px;
   flex-grow: 1;
-  width: 100%;
-  background-color: #4263eb;
+  background-color: var(--primary);
 }
 
 .histogram__item:not(:last-child) {
