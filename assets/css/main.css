@@ -20,10 +20,19 @@
   --error: var(--red);
   --success: var(--blue);
 
-  --primary: var(--blue);
-  --secondary: var(--purple);
+  --primary: #4263eb;
+  --secondary: #7048e8;
+
+  --button-primary: #4263eb;
+  --button-primary-hovered: #2342c0;
+
+  --button-secondary: #7048e8;
+  --button-secondary-hovered: #5028c6;
+
+  --button-alternate: #fff;
+  --button-alternate-hovered: #fff;
 }
 
-* {
+body {
   font-family: 'Roboto', sans-serif;
 }
