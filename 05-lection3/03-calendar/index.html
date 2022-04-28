@@ -1,12 +1,103 @@
 <!DOCTYPE html>
 <!-- Страница с календарем -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./calendar.css">
-        <title>Calendar</title>
-    </head>
-    <body>
+  <head>
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="./calendar.css" />
+    <title>Calendar</title>
+  </head>
+  <body
+    style="
+      height: 700px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    "
+  >
+    <div class="calendar">
+      <div class="calendar__title" id="calendarTitle">April 2022</div>
 
-    </body>
+      <div class="calendar__wrap">
+        <div class="calendar__inner" id="calendar">
+          <span class="calendar__item calendar__item-day">Su</span>
+          <span class="calendar__item calendar__item-day">Mo</span>
+          <span class="calendar__item calendar__item-day">Tu</span>
+          <span class="calendar__item calendar__item-day">We</span>
+          <span class="calendar__item calendar__item-day">Th</span>
+          <span class="calendar__item calendar__item-day">Fr</span>
+          <span class="calendar__item calendar__item-day">Sa</span>
+          <!-- <span class="calendar__item"></span>
+          <span class="calendar__item"></span>
+          <span class="calendar__item"></span>
+          <span class="calendar__item"></span>
+          <span class="calendar__item"></span> -->
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const monthNames = [
+        'January',
+        'February',
+        'March',
+        'April',
+        'May',
+        'June',
+        'July',
+        'August',
+        'September',
+        'October',
+        'November',
+        'December',
+      ];
+
+      const getDaysInMonth = (month, year) => {
+        return new Date(year, month + 1, 0).getDate();
+      };
+
+      document.addEventListener('DOMContentLoaded', function (event) {
+        const MONTH = 2; // month index
+        const YEAR = 2022;
+
+        const startRange = 12;
+        const endRange = 20;
+        const betweenRange = [13, 14, 15, 16, 17, 18, 19];
+
+        const firstMonthDay = new Date(YEAR, MONTH, 1);
+        const emptyDays = firstMonthDay.getDay();
+        const totalDaysInMonth = getDaysInMonth(MONTH, YEAR);
+        const totalCells = totalDaysInMonth + emptyDays;
+
+        const parent = document.getElementById('calendar');
+        const calendarTitle = document.getElementById('calendarTitle');
+        calendarTitle.innerText = `${
+          monthNames[MONTH]
+        } ${firstMonthDay.getFullYear()}`;
+
+        for (let i = 1; i <= totalCells; i++) {
+          const node = document.createElement('span');
+          let innerText = '';
+          if (i <= emptyDays) {
+            node.classList.add('calendar__item');
+            innerText = '';
+          } else {
+            node.classList.add('calendar__item');
+            const realDate = i - emptyDays;
+            if (realDate === startRange) {
+              node.classList.add('calendar__item-range-start');
+            }
+            if (realDate === endRange) {
+              node.classList.add('calendar__item-range-end');
+            }
+            if (betweenRange.includes(realDate)) {
+              node.classList.add('calendar__item-range-between');
+            }
+            innerText = realDate;
+          }
+          node.innerText = innerText;
+          parent.appendChild(node);
+        }
+      });
+    </script>
+  </body>
 </html>

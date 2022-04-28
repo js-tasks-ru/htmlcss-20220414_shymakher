@@ -31,6 +31,9 @@
 
   --button-alternate: #fff;
   --button-alternate-hovered: #fff;
+
+  --calendar-title: #334d6e;
+  --calendar-day: #90a0b7;
 }
 
 body {
