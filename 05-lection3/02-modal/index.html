@@ -2,6 +2,7 @@
 <!-- Страница с модалкой -->
 <html lang="ru">
   <head>
+    <link rel="stylesheet" href="../../assets/css/normalize.css" />
     <link rel="stylesheet" href="../../assets/css/main.css" />
     <link rel="stylesheet" href="./modal.css" />
     <title>Modal</title>
@@ -163,9 +164,7 @@
     <button id="modal-open" class="button button_primary">Open Modal</button>
 
     <div class="modal" id="modal">
-      <div class="modal__overlay"></div>
-
-      <div class="modal__content-wrap">
+      <div class="modal__content-wrap" id="modal-content">
         <div class="modal__content">
           <button id="modal-close" class="button-close">
             <svg
