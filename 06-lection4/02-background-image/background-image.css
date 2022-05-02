@@ -1,0 +1,25 @@
+.avatar {
+  width: 102px;
+  height: 102px;
+  background-image: url('./public/forest_400.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+  .avatar {
+    background-image: url('./public/forest_768.jpg');
+  }
+}
+@media (min-width: 1024px) {
+  .avatar {
+    background-image: url('./public/forest_1024.jpg');
+  }
+}
+@media (min-width: 2560px) {
+  .avatar {
+    background-image: url('./public/forest_2560.jpg');
+  }
+}
