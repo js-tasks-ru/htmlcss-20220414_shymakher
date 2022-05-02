@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./srcset.css">
-    </head>
-    <body>
+  <head>
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="./srcset.css" />
+  </head>
+  <body>
+    <div style="height: 300px; width: 300px; margin: 0 auto">
+      <!-- <picture class="picture">
+        <source media="(min-width:768px)" srcset="public/forest_768.jpg" />
+        <source media="(min-width:400px)" srcset="public/forest_400.jpg" />
+        <img class="picture__image" src="public/forest_400.jpg" alt="pic" />
+      </picture> -->
 
-    </body>
+      <img
+        class="picture"
+        alt="pic"
+        srcset="public/forest_400.jpg 1x, public/forest_768.jpg 2x"
+        sizes="(max-width:400px) 400px,(max-width:768px) 768px, 400px"
+        src="public/forest_400.jpg"
+      />
+    </div>
+  </body>
 </html>
