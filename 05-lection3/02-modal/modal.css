@@ -28,7 +28,7 @@
   line-height: 24px;
 }
 
-.button-close {
+.modal__button-close {
   position: absolute;
   top: 12px;
   right: 12px;
