@@ -19,13 +19,13 @@
 
       <div class="calendar__wrap">
         <div class="calendar__inner" id="calendar">
-          <span class="calendar__item calendar__item-day">Su</span>
-          <span class="calendar__item calendar__item-day">Mo</span>
-          <span class="calendar__item calendar__item-day">Tu</span>
-          <span class="calendar__item calendar__item-day">We</span>
-          <span class="calendar__item calendar__item-day">Th</span>
-          <span class="calendar__item calendar__item-day">Fr</span>
-          <span class="calendar__item calendar__item-day">Sa</span>
+          <span class="calendar__item calendar__item_day">Su</span>
+          <span class="calendar__item calendar__item_day">Mo</span>
+          <span class="calendar__item calendar__item_day">Tu</span>
+          <span class="calendar__item calendar__item_day">We</span>
+          <span class="calendar__item calendar__item_day">Th</span>
+          <span class="calendar__item calendar__item_day">Fr</span>
+          <span class="calendar__item calendar__item_day">Sa</span>
           <!-- <span class="calendar__item"></span>
           <span class="calendar__item"></span>
           <span class="calendar__item"></span>
@@ -84,13 +84,13 @@
             node.classList.add('calendar__item');
             const realDate = i - emptyDays;
             if (realDate === startRange) {
-              node.classList.add('calendar__item-range-start');
+              node.classList.add('calendar__item_range-start');
             }
             if (realDate === endRange) {
-              node.classList.add('calendar__item-range-end');
+              node.classList.add('calendar__item_range-end');
             }
             if (betweenRange.includes(realDate)) {
-              node.classList.add('calendar__item-range-between');
+              node.classList.add('calendar__item_range-between');
             }
             innerText = realDate;
           }
