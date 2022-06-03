@@ -14,8 +14,8 @@
 .checkbox__control {
   width: 28px;
   height: 28px;
-  background: #ffffff;
-  border: 1px solid #dde2e5;
+  background: var(--white);
+  border: 1px solid var(--grey-2);
   border-radius: 4px;
   box-sizing: border-box;
   display: flex;
@@ -29,17 +29,17 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #495057;
+  color: var(--grey-4);
 }
 
 .checkbox__input:checked ~ .checkbox__state .checkbox__control {
-  background: #4263eb;
-  border-color: #4263eb;
+  background: var(--primary);
+  border-color: var(--primary);
 }
 
 .checkbox__input:disabled ~ .checkbox__state .checkbox__control {
-  background: #dde2e5;
-  border-color: #dde2e5;
+  background: var(--grey-2);
+  border-color: var(--grey-2);
 }
 
 .checkbox__input:disabled ~ .checkbox__state .checkbox__icon {
