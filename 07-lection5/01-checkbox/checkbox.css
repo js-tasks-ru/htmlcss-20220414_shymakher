@@ -49,6 +49,9 @@
 .checkbox__input:disabled ~ .checkbox__state .checkbox__icon {
   visibility: hidden;
 }
+.checkbox__input:disabled ~ .checkbox__state .checkbox__title {
+  color: var(--grey-2);
+}
 
 .checkbox__input:disabled ~ .checkbox__state {
   cursor: not-allowed;
