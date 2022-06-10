@@ -23,6 +23,7 @@
   justify-content: center;
 }
 .checkbox__icon {
+  display: none;
 }
 .checkbox__title {
   font-family: 'Inter';
@@ -35,6 +36,10 @@
 .checkbox__input:checked ~ .checkbox__state .checkbox__control {
   background: var(--primary);
   border-color: var(--primary);
+}
+.checkbox__input:checked ~ .checkbox__state .checkbox__icon {
+  display: block;
+  height: inherit;
 }
 
 .checkbox__input:focus ~ .checkbox__state .checkbox__title {
